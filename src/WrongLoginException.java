@@ -1,2 +1,8 @@
-package PACKAGE_NAME;public class WrongLoginException {
+public class WrongLoginException extends RuntimeException{
+    public WrongLoginException() {
+    }
+
+    public WrongLoginException(String message) {
+        super(message);
+    }
 }
